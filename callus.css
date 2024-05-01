@@ -1,0 +1,440 @@
+/* Contact Us */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*::selection{
+    background-color:#505050;
+}
+body{
+    background-color: white;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+    color: #505050;
+    
+}
+.navbar{
+    margin-top: -15px;
+    height: 60px;
+    background-color: #F5F5DC;
+    width: 100%;
+    position: relative;
+    display: flex;  
+    justify-content: right;
+    align-content: center;
+
+}
+.container{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-box{
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: black;
+    width: 100%;
+    height: 350px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    flex-direction: column;
+    
+    /*mix-blend-mode: multiply;: هذه
+الخاصية تحدد كيفية خلط محتوى عنصر مع خلفيته المباشرة1. القيمة multiply تعني أن الألوان في العنصر ستُضرب 
+بألوان الخلفية، 
+مما ينتج عنه مظهر أغمق2.
+    flex-direction: column;: هذه الخاصية 
+    تُستخدم في تخطيطات الـ Flexbox لتحديد الاتجاه الذي يتم فيه وضع العناصر داخل حاوية الـ Flex3.
+        القيمة column تعني أن العناصر ستُعرض بشكل عمودي، أي فوق بعضها البعض3.
+    كلا الخاصيتين تُستخدمان لإنشاء تصاميم متقدمة وتفاعلية على صفحات الويب*/
+}
+
+marquee{
+    font-size: large;
+    font-weight: 600;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 40px;
+    
+    
+
+}
+.navbar h2{
+    margin-top: 9px;
+    margin-right: 650px;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #505050;
+font-weight: 900;
+font-size: 1.25rem;
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 45px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+li:hover{
+    border-bottom:solid #505050 2px;
+padding-bottom: 10px;    
+}
+.contactbody{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navbar h1{
+    position: absolute;
+    left:10px;
+    margin-top: 9px;
+    
+/*     
+    margin-top: 9px;
+    margin-right: 590px;
+    font-weight: 900; */
+}
+
+.contact{
+    padding: 110px 30%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.contact-form h1{
+    display: inline-block;
+    font-size: 70px;
+    color: #505050;
+    margin-bottom: 20px;
+}
+
+/* .contact-form h1 span{
+    color:#fc0050;
+} */
+
+/* .contact-form p{
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 23px;
+    margin-bottom: 20px;
+} */
+
+
+/* .contact-form form input,form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background-color: #191919;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} */
+
+/* .contact-form form .submit-btn{
+    display: inline-block;
+    background-color: #fc0050;
+    font-size: 27px;
+    font-weight: 600px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    width: 220px;
+    cursor: pointer;
+    transition: ease 0.30s;
+
+} */
+
+/* .contact-form form .submit-btn:hover{
+    border: 2px solid #fc0050;
+    background-color: transparent;
+    transform: scale(1.1);
+
+} */
+.navbar{
+    height: 60px;
+    background-color: #F5F5DC;
+    width: 100%;
+    position: relative;
+    display: flex;  
+    justify-content: right;
+    align-content: center;
+
+}
+marquee{
+    font-size: large;
+    font-weight: 600;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 40px;
+    
+    
+
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-right: 10px;
+
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 45px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+li:hover{
+    border-bottom:solid white 2px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #505050;
+font-weight: 900;
+font-size: 1.25rem;
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 45px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+li:hover{
+    border-bottom:solid #505050 2px;
+padding-bottom: 10px;    
+}
+
+/*--------------------------------------------------------------------*/
+.us{
+    /* display: inline-block; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        width: 100%;
+}
+.ayman{
+    /* display: inline-block; */
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        width: 100%;
+}
+.acard 
+{
+    margin: 10px;
+	position: relative;
+	width: 300px;
+	height: 380px;
+	background: #F5F5DC;
+	display: flex;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+.acard:hover 
+{
+	width: 600px;
+}
+.acard .imgBx 
+{
+	position: relative;
+	min-width: 300px;
+	height: 100%;
+	background: #F5F5DC   ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+.acard .imgBx  img 
+{
+	max-width: 250px;
+	transition: 0.5s ease-in-out;
+}
+.acard:hover .imgBx  img 
+{
+	transform: rotate(-35deg) translateX(-20px);
+}
+.acard .details 
+{
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: #ECECEC;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-direction: column;
+	transition: 0.5s ease-in-out;
+}
+.acard:hover .details 
+{
+	right: 300px;
+}
+.acard .details::before 
+{
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+	z-index: 1;
+}
+.acard .details h3 
+{
+	color: #505050;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+.acard .details h3 span 
+{
+	font-size: 0.65em;
+	font-weight: 300;
+	opacity: 0.85;
+	text-transform: none;
+}
+.acard .details h4 
+{
+	color: #505050;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9em;
+	line-height: 1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+p 
+{
+	color: #505050;
+	font-size: 0.8em;
+	opacity: 0.85;
+}
+.size 
+{
+	display: flex;
+	gap: 10px;
+}
+.size li 
+{
+	list-style: none;
+	color: #505050;
+	font-size: 0.9em;
+	width: 60px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #fff;
+	cursor: pointer;
+	font-weight: 500;
+	opacity: 0.5;
+    margin-left: 30px;
+}
+.size li:hover 
+{
+	background: #ECECEC;
+	color: #505050;
+	opacity: 1;
+}
+.group 
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+}
+/* .dis{
+    display: inline-block;
+} */
+.acard .details h2 
+{
+	color: #505050;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2em;
+}
+.acard .details h2 sup 
+{
+	font-weight: 300;
+}
+.acard .details h2 small 
+{
+	font-size: 0.75em;
+}
+.acard .details a 
+{
+	display: inline-flex;
+	padding: 10px 25px;
+	background: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #505050;
+}
+button{
+    background-color: #F5F5DC   ;
+    color: #F5F5DC;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    left: 39%;
+    height: 35px;
+    width: 300px;
+    justify-content: center;
+    
+}
+button:hover{
+    box-shadow: 10px 10px 6px #F5F5DC;
+}
+/* .dis1{
+    display: block;
+    width: 100%;
+} */
+.acard {
+    /* ... الخصائص الأخرى ... */
+    display: flex;
+    flex-direction: row-reverse; /* عكس ترتيب العناصر */
+}

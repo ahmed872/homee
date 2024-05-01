@@ -1,0 +1,184 @@
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+*::selection{
+    background-color:#505050;
+}
+body{
+    background-color: white;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+    color: #505050;
+    
+}
+.navbar{
+    margin-top: -15px;
+    height: 60px;
+    background-color: #F5F5DC;
+    width: 100%;
+    position: relative;
+    display: flex;  
+    justify-content: right;
+    align-content: center;
+
+}
+marquee{
+    font-size: large;
+    font-weight: 600;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 40px;
+    
+    
+
+}
+.navbar h1{
+    
+    margin-top: 9px;
+    margin-right: 650px;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #505050;
+font-weight: 900;
+font-size: 1.25rem;
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 45px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+li:hover{
+    border-bottom:solid #505050 2px;
+padding-bottom: 10px;    
+}
+.ourcompany{
+    text-align: center;
+    margin-top: 50px;
+    color: #505050;
+    
+}
+.ourcompany span{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.ourcompany p{
+    font-size: 1.5rem;
+    font-weight:bold ;
+    
+    margin: 15px 50px 50px 50px;
+}
+
+.ourgallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+/*
+    justify-content: space-around;
+    align-content: center;
+display: grid;
+grid-template-columns: 24% 24% 24% 24%;
+grid-template-rows: auto auto auto auto; */
+
+}
+
+.ourgallery .card-container{
+height: 450px;
+width :28%;
+background-color: #ECECEC;
+display: inline-block;
+margin-left: 10px;
+flex-grow: 1;
+margin-bottom: 10px;
+margin: 15px;
+}
+/* الحاوية الخارجية للبطاقة */
+.card-container {
+    perspective: 1000px; /* إضافة تأثير العمق */
+    
+}
+
+  /* البطاقة */
+.card {
+    /* أو أي ارتفاع تفضله */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* الحفاظ على البعد الثلاثي للأطفال */
+    transition: transform 0.6s; /* تأثير انتقال سلس */
+    /* border: solid red; */
+}
+
+  /* وجه البطاقة الأمامي */
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* إخفاء الوجه عند القلب */
+    text-align: center;
+
+}
+
+  /* وجه البطاقة الخلفي */
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ECECEC;
+    backface-visibility: hidden;
+    transform: rotateY(180deg); /* قلب الوجه الخلفي */
+    font-size: .25rem;
+    font-weight: 200;
+}
+
+  /* تأثير القلب عند الوقوف على البطاقة بالماوس */
+.card-container:hover .card {
+    transform: rotateY(180deg); /* قلب البطاقة */
+    border: 0;
+}
+img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.ourgallery .price{
+    /* margin: 6px 0   0  105px; */
+    font-size: 2rem;
+    font-weight: 800;}
+
+    
+
+.ourgallery .details{
+margin: 150px 0 0 15px     ;
+font-size: 1.5rem;
+font-weight:200;
+
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color:#F5F5DC   ;
+    position: relative;
+    text-align: center;
+}
+.footer h3{
+    position: relative;
+    top: 50px;
+}
